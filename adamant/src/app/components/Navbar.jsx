@@ -1,5 +1,7 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
+import AdamantText from "../assets/adamant-text.svg";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -13,18 +15,15 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="bg-gray-800 text-white px-6 py-8">
+    <nav className=" text-black px-6 py-8">
       <div className="flex items-center justify-between">
         {/* Logo SVG placeholder */}
-        <div className="h-8 w-8">
-          {/* Replace with your own SVG */}
-          <svg viewBox="0 0 100 100" fill="currentColor" className="w-full h-full text-white">
-            <circle cx="50" cy="50" r="40" />
-          </svg>
+        <div className="h-auto w-64">
+          <Image src={AdamantText} alt="Adamant Logo" className="w-48 h-auto" />
         </div>
 
         {/* Desktop nav */}
-        <ul className="hidden md:flex gap-6 items-center">
+        <ul className="hidden md:flex gap-6 items-center text-lg">
           {links.map((link) => (
             <li key={link.href}>
               <Link
@@ -39,13 +38,12 @@ export function Navbar() {
           ))}
           {/* Phone number */}
           <li>
-            <a href="tel:+46123456789" className="font-medium hover:underline">
+            <a href="tel:+46123456789" className="hover:underline text-lg">
               012-345 6789
             </a>
           </li>
         </ul>
       </div>
-
 
       {/* Mobile dropdown menu */}
       {menuOpen && (
