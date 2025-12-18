@@ -39,7 +39,7 @@ export function Navbar() {
           {/* Phone number */}
           <li>
             <a href="tel:+46123456789" className="hover:underline text-lg">
-              012-345 6789
+              070-713 60 87
             </a>
           </li>
         </ul>
