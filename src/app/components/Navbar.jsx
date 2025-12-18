@@ -65,7 +65,7 @@ export function Navbar() {
             className="font-medium hover:underline"
             onClick={() => setMenuOpen(false)}
           >
-            012-345 6789
+            070-713 60 87
           </a>
         </div>
       )}

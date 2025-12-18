@@ -51,7 +51,7 @@ export default function TjansterPage() {
                 alt="Tjänst 3"
                 width={800}
                 height={600}
-                className="w-full h-auto rounded-lg object-cover"
+                className="w-full h-auto rounded-lg object-cover aspect-square"
               />
               <span className="py-4 text-2xl font-medium">
                 Säkerhetsrådgivning
